@@ -40,6 +40,6 @@ Do you have Grunt installed already? Skip to the next Section!
 
 ####Adding New Grunt Tasks
 1. Install your new Grunt task package via the command line. Each package readme will tell you the command needed to install it. The command looks something like: `npm install grunt-task-name --save-dev` *This command must be run inside the theme folder to work!* 
-2. This command will automatically update the package.json file with the new dependency.
+2. This command should automatically update the package.json file with the new dependency. If it doesn't, you will need to manually add it t othe DevDependencies list inside package.json
 3. Copy your Task config into the Gruntfile.js
 4. Add your task to the list of tasks in the grunt.registerTask list at the bottom of Gruntfile.js, inside the bracketed list.
