@@ -1,4 +1,4 @@
 themes
 ======
 
-The WordPress parent and child theme files for www.shetechphilly.com
+The WordPress child theme files for www.shetechphilly.com
