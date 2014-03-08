@@ -24,3 +24,14 @@ The WordPress child theme files for www.shetechphilly.com
 * git add .
 * git commit -m 'your commit message'
 * git push origin master
+
+
+###Setting up Grunt
+Do you have Grunt installed already? Skip to the next Section!
+
+1. [Download & Install Node.js](http://nodejs.org/)
+2. Install the Grunt command line tools, by opening Terminal or the Command Line and typing the following command: `npm install -g grunt-cli`
+
+###Grunt Already Installed:
+1. Open up Terminal and navigate to the she-tech-PHL folder
+2. Type and run the command: `grunt`
