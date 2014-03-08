@@ -1,0 +1,9 @@
+{
+  "default": {
+      "host": "samwell.asmallorange.com",
+      "port": 21,
+      "user": "shetechp",
+      "password": "LadyHacks13",
+      "remotePath": "ftp-basepath"
+  }
+}
