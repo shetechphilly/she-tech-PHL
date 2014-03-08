@@ -15,7 +15,7 @@ Template:       responsive
 */
 
 .menu, .menu ul {
-    /*background-color: #A8BCC5;*/
+    background-color: #A8BCC5;
     float: right;
     background-image: none;
     margin: -50%, 0;
