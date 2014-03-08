@@ -38,11 +38,18 @@ module.exports = function(grunt){
         files: ['**/*.{png,jpg,gif}'],
         tasks: ['imagemin']
       }
-		}
-    //,
-    // ADD NEW TASKS BELOW, UNCOMMENT COMMA ABOVE TO SEPARATE
+		},
+
+    git_ftp: {
+      production: {
+        options: {
+          'hostFile':'.gitftppass',
+          'host':'default'
+        }
+      }
+    }
 
 	});
 
-  grunt.registerTask('default', ['uglify','watch']);
+  grunt.registerTask('default', ['uglify','watch', 'grunt-git-ftp']);
 };
