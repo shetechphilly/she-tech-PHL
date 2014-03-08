@@ -35,3 +35,5 @@ Do you have Grunt installed already? Skip to the next Section!
 ###Grunt Already Installed:
 1. Open up Terminal and navigate to the she-tech-PHL folder
 2. Type and run the command: `grunt`
+3. You should get a 'Waiting...' message as the Grunt Watch task waits for changes.
+4. To stop running Grunt, hit control+C
