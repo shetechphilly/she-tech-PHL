@@ -37,3 +37,9 @@ Do you have Grunt installed already? Skip to the next Section!
 2. Type and run the command: `grunt`
 3. You should get a 'Waiting...' message as the Grunt Watch task waits for changes.
 4. To stop running Grunt, hit control+C
+
+####Adding New Grunt Tasks
+1. Install your new Grunt task package via the command line. Each package readme will tell you the command needed to install it. The command looks something like: `npm install grunt-task-name --save-dev` *This command must be run inside the theme folder to work!* 
+2. This command will automatically update the package.json file with the new dependency.
+3. Copy your Task config into the Gruntfile.js
+4. Add your task to the list of tasks in the grunt.registerTask list at the bottom of Gruntfile.js, inside the bracketed list.
