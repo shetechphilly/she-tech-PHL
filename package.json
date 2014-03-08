@@ -2,6 +2,19 @@
   "name": "she-tech-PHL",
   "version": "0.1.0",
   "devDependencies": {
-    "grunt": "~0.4.1"
-  }
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-imagemin": "~0.4.0",
+    "matchdep": "*"
+  },
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/shetechphilly/she-tech-PHL.git"
+	},
+	"author": "She Tech Philly",
+	"bugs": {
+		"url": "https://github.com/shetechphilly/she-tech-PHL/issues"
+	},
+	"homepage": "https://github.com/shetechphilly/she-tech-PHL"
 }

@@ -5,21 +5,13 @@ module.exports = function(grunt){
     pkg: grunt.file.readJSON('package.json'),
 
     uglify: {
-      dev: {
         options: {
           beautify: true
         },
         files: {
           // Where to combine and minify JS files, followed by list of which files to include and exclude
-          'a/j/script.min.js' : ['a/j/plugins/*.js', 'a/j/script.js', '!a/j/plugins/modernizr.js']
-        }
-      },
-      prod: {
-        files: {
-          // Where to combine and minify JS files, followed by list of which files to include and exclude
           'a/j/script.min.js' : ['a/j/plugins/*.js', 'a/j/script.js', '!a/j/plugins/modernizr.js', '!a/j/plugins/livereload.js']
         }
-      }
     },
 
     imagemin: {                          // Task
@@ -40,7 +32,7 @@ module.exports = function(grunt){
       },
       js: {
         files: ['a/j/**/*.js', '!a/j/script.min.js'], // Watch for changes in JS files except for script.min.js to avoid reload loops
-        tasks: ['uglify:dev']
+        tasks: ['uglify']
       },
       images: {
         files: ['**/*.{png,jpg,gif}'],
@@ -49,6 +41,5 @@ module.exports = function(grunt){
 		}
 	});
 
-  grunt.registerTask('default', ['uglify:dev','watch']);
-  grunt.registerTask('production', ['uglify:prod']);
+  grunt.registerTask('default', ['uglify','watch']);
 };
