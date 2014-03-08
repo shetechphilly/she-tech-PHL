@@ -39,6 +39,9 @@ module.exports = function(grunt){
         tasks: ['imagemin']
       }
 		}
+    //,
+    // ADD NEW TASKS BELOW, UNCOMMENT COMMA ABOVE TO SEPARATE
+
 	});
 
   grunt.registerTask('default', ['uglify','watch']);
